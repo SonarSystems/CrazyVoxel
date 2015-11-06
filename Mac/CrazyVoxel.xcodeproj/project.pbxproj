@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE3B71B81BEBB06D00D79389 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3B71B71BEBB06D00D79389 /* main.cpp */; };
+		EE3B71BF1BEBB07E00D79389 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3B71BE1BEBB07E00D79389 /* OpenGL.framework */; };
+		EE58ADAA1BED12A600B096F2 /* libGLEW.1.12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD871BED12A600B096F2 /* libGLEW.1.12.0.dylib */; };
+		EE58ADAB1BED12A600B096F2 /* libGLEW.1.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD881BED12A600B096F2 /* libGLEW.1.12.dylib */; };
+		EE58ADAC1BED12A600B096F2 /* libGLEW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD891BED12A600B096F2 /* libGLEW.a */; };
+		EE58ADAD1BED12A600B096F2 /* libGLEW.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD8A1BED12A600B096F2 /* libGLEW.dylib */; };
+		EE58ADAE1BED12A600B096F2 /* libGLEWmx.1.12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD8B1BED12A600B096F2 /* libGLEWmx.1.12.0.dylib */; };
+		EE58ADAF1BED12A600B096F2 /* libGLEWmx.1.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD8C1BED12A600B096F2 /* libGLEWmx.1.12.dylib */; };
+		EE58ADB01BED12A600B096F2 /* libGLEWmx.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD8D1BED12A600B096F2 /* libGLEWmx.a */; };
+		EE58ADB11BED12A600B096F2 /* libGLEWmx.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD8E1BED12A600B096F2 /* libGLEWmx.dylib */; };
+		EE58ADB21BED12A600B096F2 /* libglfw3.3.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58ADA41BED12A600B096F2 /* libglfw3.3.1.dylib */; };
+		EE58ADB31BED12A600B096F2 /* libglfw3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58ADA51BED12A600B096F2 /* libglfw3.3.dylib */; };
+		EE58ADB41BED12A600B096F2 /* libglfw3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58ADA61BED12A600B096F2 /* libglfw3.dylib */; };
+		EE58ADB51BED12A600B096F2 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = EE58ADA91BED12A600B096F2 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE3B71B21BEBB06D00D79389 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE3B71B41BEBB06D00D79389 /* CrazyVoxel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CrazyVoxel; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3B71B71BEBB06D00D79389 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		EE3B71BE1BEBB07E00D79389 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EE58AD7E1BED12A600B096F2 /* glewinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = glewinfo; sourceTree = "<group>"; };
+		EE58AD7F1BED12A600B096F2 /* visualinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = visualinfo; sourceTree = "<group>"; };
+		EE58AD821BED12A600B096F2 /* glew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glew.h; sourceTree = "<group>"; };
+		EE58AD831BED12A600B096F2 /* glxew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glxew.h; sourceTree = "<group>"; };
+		EE58AD841BED12A600B096F2 /* wglew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wglew.h; sourceTree = "<group>"; };
+		EE58AD851BED12A600B096F2 /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
+		EE58AD871BED12A600B096F2 /* libGLEW.1.12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.1.12.0.dylib; sourceTree = "<group>"; };
+		EE58AD881BED12A600B096F2 /* libGLEW.1.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.1.12.dylib; sourceTree = "<group>"; };
+		EE58AD891BED12A600B096F2 /* libGLEW.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLEW.a; sourceTree = "<group>"; };
+		EE58AD8A1BED12A600B096F2 /* libGLEW.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEW.dylib; sourceTree = "<group>"; };
+		EE58AD8B1BED12A600B096F2 /* libGLEWmx.1.12.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEWmx.1.12.0.dylib; sourceTree = "<group>"; };
+		EE58AD8C1BED12A600B096F2 /* libGLEWmx.1.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEWmx.1.12.dylib; sourceTree = "<group>"; };
+		EE58AD8D1BED12A600B096F2 /* libGLEWmx.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGLEWmx.a; sourceTree = "<group>"; };
+		EE58AD8E1BED12A600B096F2 /* libGLEWmx.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libGLEWmx.dylib; sourceTree = "<group>"; };
+		EE58AD901BED12A600B096F2 /* glew.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glew.pc; sourceTree = "<group>"; };
+		EE58AD911BED12A600B096F2 /* glewmx.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glewmx.pc; sourceTree = "<group>"; };
+		EE58AD921BED12A600B096F2 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		EE58AD931BED12A600B096F2 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		EE58AD941BED12A600B096F2 /* TODO.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TODO.txt; sourceTree = "<group>"; };
+		EE58AD971BED12A600B096F2 /* COPYING.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING.txt; sourceTree = "<group>"; };
+		EE58AD9A1BED12A600B096F2 /* glfw3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3.h; sourceTree = "<group>"; };
+		EE58AD9B1BED12A600B096F2 /* glfw3native.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = glfw3native.h; sourceTree = "<group>"; };
+		EE58AD9C1BED12A600B096F2 /* INSTALL_RECEIPT.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = INSTALL_RECEIPT.json; sourceTree = "<group>"; };
+		EE58ADA01BED12A600B096F2 /* glfw3Config.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glfw3Config.cmake; sourceTree = "<group>"; };
+		EE58ADA11BED12A600B096F2 /* glfw3ConfigVersion.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glfw3ConfigVersion.cmake; sourceTree = "<group>"; };
+		EE58ADA21BED12A600B096F2 /* glfwTargets-release.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "glfwTargets-release.cmake"; sourceTree = "<group>"; };
+		EE58ADA31BED12A600B096F2 /* glfwTargets.cmake */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glfwTargets.cmake; sourceTree = "<group>"; };
+		EE58ADA41BED12A600B096F2 /* libglfw3.3.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw3.3.1.dylib; sourceTree = "<group>"; };
+		EE58ADA51BED12A600B096F2 /* libglfw3.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw3.3.dylib; sourceTree = "<group>"; };
+		EE58ADA61BED12A600B096F2 /* libglfw3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libglfw3.dylib; sourceTree = "<group>"; };
+		EE58ADA81BED12A600B096F2 /* glfw3.pc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = glfw3.pc; sourceTree = "<group>"; };
+		EE58ADA91BED12A600B096F2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE3B71B11BEBB06D00D79389 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE58ADB31BED12A600B096F2 /* libglfw3.3.dylib in Frameworks */,
+				EE58ADB11BED12A600B096F2 /* libGLEWmx.dylib in Frameworks */,
+				EE58ADAD1BED12A600B096F2 /* libGLEW.dylib in Frameworks */,
+				EE58ADAF1BED12A600B096F2 /* libGLEWmx.1.12.dylib in Frameworks */,
+				EE58ADAE1BED12A600B096F2 /* libGLEWmx.1.12.0.dylib in Frameworks */,
+				EE58ADAB1BED12A600B096F2 /* libGLEW.1.12.dylib in Frameworks */,
+				EE58ADB21BED12A600B096F2 /* libglfw3.3.1.dylib in Frameworks */,
+				EE58ADB41BED12A600B096F2 /* libglfw3.dylib in Frameworks */,
+				EE58ADAC1BED12A600B096F2 /* libGLEW.a in Frameworks */,
+				EE58ADB01BED12A600B096F2 /* libGLEWmx.a in Frameworks */,
+				EE58ADAA1BED12A600B096F2 /* libGLEW.1.12.0.dylib in Frameworks */,
+				EE3B71BF1BEBB07E00D79389 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE3B71AB1BEBB06D00D79389 = {
+			isa = PBXGroup;
+			children = (
+				EE58AD7B1BED12A600B096F2 /* glew */,
+				EE58AD951BED12A600B096F2 /* glfw3 */,
+				EE3B71BE1BEBB07E00D79389 /* OpenGL.framework */,
+				EE3B71B61BEBB06D00D79389 /* CrazyVoxel */,
+				EE3B71B51BEBB06D00D79389 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE3B71B51BEBB06D00D79389 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3B71B41BEBB06D00D79389 /* CrazyVoxel */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3B71B61BEBB06D00D79389 /* CrazyVoxel */ = {
+			isa = PBXGroup;
+			children = (
+				EE3B71B71BEBB06D00D79389 /* main.cpp */,
+			);
+			path = CrazyVoxel;
+			sourceTree = "<group>";
+		};
+		EE58AD7B1BED12A600B096F2 /* glew */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD7C1BED12A600B096F2 /* 1.12.0 */,
+			);
+			path = glew;
+			sourceTree = "<group>";
+		};
+		EE58AD7C1BED12A600B096F2 /* 1.12.0 */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD7D1BED12A600B096F2 /* bin */,
+				EE58AD801BED12A600B096F2 /* include */,
+				EE58AD851BED12A600B096F2 /* INSTALL_RECEIPT.json */,
+				EE58AD861BED12A600B096F2 /* lib */,
+				EE58AD921BED12A600B096F2 /* LICENSE.txt */,
+				EE58AD931BED12A600B096F2 /* README.txt */,
+				EE58AD941BED12A600B096F2 /* TODO.txt */,
+			);
+			path = 1.12.0;
+			sourceTree = "<group>";
+		};
+		EE58AD7D1BED12A600B096F2 /* bin */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD7E1BED12A600B096F2 /* glewinfo */,
+				EE58AD7F1BED12A600B096F2 /* visualinfo */,
+			);
+			path = bin;
+			sourceTree = "<group>";
+		};
+		EE58AD801BED12A600B096F2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD811BED12A600B096F2 /* GL */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EE58AD811BED12A600B096F2 /* GL */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD821BED12A600B096F2 /* glew.h */,
+				EE58AD831BED12A600B096F2 /* glxew.h */,
+				EE58AD841BED12A600B096F2 /* wglew.h */,
+			);
+			path = GL;
+			sourceTree = "<group>";
+		};
+		EE58AD861BED12A600B096F2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD871BED12A600B096F2 /* libGLEW.1.12.0.dylib */,
+				EE58AD881BED12A600B096F2 /* libGLEW.1.12.dylib */,
+				EE58AD891BED12A600B096F2 /* libGLEW.a */,
+				EE58AD8A1BED12A600B096F2 /* libGLEW.dylib */,
+				EE58AD8B1BED12A600B096F2 /* libGLEWmx.1.12.0.dylib */,
+				EE58AD8C1BED12A600B096F2 /* libGLEWmx.1.12.dylib */,
+				EE58AD8D1BED12A600B096F2 /* libGLEWmx.a */,
+				EE58AD8E1BED12A600B096F2 /* libGLEWmx.dylib */,
+				EE58AD8F1BED12A600B096F2 /* pkgconfig */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EE58AD8F1BED12A600B096F2 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD901BED12A600B096F2 /* glew.pc */,
+				EE58AD911BED12A600B096F2 /* glewmx.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+		EE58AD951BED12A600B096F2 /* glfw3 */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD961BED12A600B096F2 /* 3.1.2 */,
+			);
+			path = glfw3;
+			sourceTree = "<group>";
+		};
+		EE58AD961BED12A600B096F2 /* 3.1.2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD971BED12A600B096F2 /* COPYING.txt */,
+				EE58AD981BED12A600B096F2 /* include */,
+				EE58AD9C1BED12A600B096F2 /* INSTALL_RECEIPT.json */,
+				EE58AD9D1BED12A600B096F2 /* lib */,
+				EE58ADA91BED12A600B096F2 /* README.md */,
+			);
+			path = 3.1.2;
+			sourceTree = "<group>";
+		};
+		EE58AD981BED12A600B096F2 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD991BED12A600B096F2 /* GLFW */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		EE58AD991BED12A600B096F2 /* GLFW */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD9A1BED12A600B096F2 /* glfw3.h */,
+				EE58AD9B1BED12A600B096F2 /* glfw3native.h */,
+			);
+			path = GLFW;
+			sourceTree = "<group>";
+		};
+		EE58AD9D1BED12A600B096F2 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD9E1BED12A600B096F2 /* cmake */,
+				EE58ADA41BED12A600B096F2 /* libglfw3.3.1.dylib */,
+				EE58ADA51BED12A600B096F2 /* libglfw3.3.dylib */,
+				EE58ADA61BED12A600B096F2 /* libglfw3.dylib */,
+				EE58ADA71BED12A600B096F2 /* pkgconfig */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EE58AD9E1BED12A600B096F2 /* cmake */ = {
+			isa = PBXGroup;
+			children = (
+				EE58AD9F1BED12A600B096F2 /* glfw */,
+			);
+			path = cmake;
+			sourceTree = "<group>";
+		};
+		EE58AD9F1BED12A600B096F2 /* glfw */ = {
+			isa = PBXGroup;
+			children = (
+				EE58ADA01BED12A600B096F2 /* glfw3Config.cmake */,
+				EE58ADA11BED12A600B096F2 /* glfw3ConfigVersion.cmake */,
+				EE58ADA21BED12A600B096F2 /* glfwTargets-release.cmake */,
+				EE58ADA31BED12A600B096F2 /* glfwTargets.cmake */,
+			);
+			path = glfw;
+			sourceTree = "<group>";
+		};
+		EE58ADA71BED12A600B096F2 /* pkgconfig */ = {
+			isa = PBXGroup;
+			children = (
+				EE58ADA81BED12A600B096F2 /* glfw3.pc */,
+			);
+			path = pkgconfig;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE3B71B31BEBB06D00D79389 /* CrazyVoxel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3B71BB1BEBB06D00D79389 /* Build configuration list for PBXNativeTarget "CrazyVoxel" */;
+			buildPhases = (
+				EE3B71B01BEBB06D00D79389 /* Sources */,
+				EE3B71B11BEBB06D00D79389 /* Frameworks */,
+				EE3B71B21BEBB06D00D79389 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrazyVoxel;
+			productName = CrazyVoxel;
+			productReference = EE3B71B41BEBB06D00D79389 /* CrazyVoxel */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE3B71AC1BEBB06D00D79389 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sonar Systems";
+				TargetAttributes = {
+					EE3B71B31BEBB06D00D79389 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = EE3B71AF1BEBB06D00D79389 /* Build configuration list for PBXProject "CrazyVoxel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EE3B71AB1BEBB06D00D79389;
+			productRefGroup = EE3B71B51BEBB06D00D79389 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE3B71B31BEBB06D00D79389 /* CrazyVoxel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE3B71B01BEBB06D00D79389 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE58ADB51BED12A600B096F2 /* README.md in Sources */,
+				EE3B71B81BEBB06D00D79389 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE3B71B91BEBB06D00D79389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EE3B71BA1BEBB06D00D79389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EE3B71BC1BEBB06D00D79389 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.12.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					/usr/local/Cellar,
+					/usr/local/lib,
+					"$(PROJECT_DIR)/glew/1.12.0/lib",
+					"$(PROJECT_DIR)/glfw3/3.1.2/lib",
+				);
+				OTHER_LDFLAGS = "-lGLEW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE3B71BD1BEBB06D00D79389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/glew/1.12.0/lib,
+					/usr/local/Cellar/glfw3/3.1.2/lib,
+					/usr/local/Cellar,
+					/usr/local/lib,
+					"$(PROJECT_DIR)/glew/1.12.0/lib",
+					"$(PROJECT_DIR)/glfw3/3.1.2/lib",
+				);
+				OTHER_LDFLAGS = "-lGLEW";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE3B71AF1BEBB06D00D79389 /* Build configuration list for PBXProject "CrazyVoxel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3B71B91BEBB06D00D79389 /* Debug */,
+				EE3B71BA1BEBB06D00D79389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE3B71BB1BEBB06D00D79389 /* Build configuration list for PBXNativeTarget "CrazyVoxel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3B71BC1BEBB06D00D79389 /* Debug */,
+				EE3B71BD1BEBB06D00D79389 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE3B71AC1BEBB06D00D79389 /* Project object */;
+}
