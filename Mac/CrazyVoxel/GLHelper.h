@@ -14,6 +14,11 @@
 #include <GL/glew.h>
 #include <math.h>
 
+// shortcut for using namespace GLHelper;
+#define USING_NS_GLH using namespace GLHelper;
+// shortcut for using namespace Shapes;
+#define USING_NS_SHAPES using namespace Shapes;
+
 namespace GLHelper
 {
     namespace Shapes

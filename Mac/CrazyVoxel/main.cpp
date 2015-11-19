@@ -7,6 +7,8 @@
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
 
+USING_NS_GLH
+USING_NS_SHAPES
 
 int main( void )
 {
@@ -43,7 +45,7 @@ int main( void )
         glClear( GL_COLOR_BUFFER_BIT );
         
         // render OpenGL here
-        GLHelper::Shapes::DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0, 120, 36 );
+        DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0, 120, 36 );
 
         
         
