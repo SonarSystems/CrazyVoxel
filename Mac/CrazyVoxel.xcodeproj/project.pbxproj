@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE05E2311BFE7A71008C68FF /* GLHelper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE05E22F1BFE7A71008C68FF /* GLHelper.cpp */; };
 		EE3B71B81BEBB06D00D79389 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE3B71B71BEBB06D00D79389 /* main.cpp */; };
 		EE3B71BF1BEBB07E00D79389 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3B71BE1BEBB07E00D79389 /* OpenGL.framework */; };
 		EE58ADAA1BED12A600B096F2 /* libGLEW.1.12.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE58AD871BED12A600B096F2 /* libGLEW.1.12.0.dylib */; };
@@ -36,6 +37,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EE05E22F1BFE7A71008C68FF /* GLHelper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GLHelper.cpp; sourceTree = "<group>"; };
+		EE05E2321BFE7D4E008C68FF /* GLHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLHelper.h; sourceTree = "<group>"; };
 		EE3B71B41BEBB06D00D79389 /* CrazyVoxel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CrazyVoxel; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3B71B71BEBB06D00D79389 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		EE3B71BE1BEBB07E00D79389 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				EE3B71B71BEBB06D00D79389 /* main.cpp */,
+				EE05E22F1BFE7A71008C68FF /* GLHelper.cpp */,
+				EE05E2321BFE7D4E008C68FF /* GLHelper.h */,
 			);
 			path = CrazyVoxel;
 			sourceTree = "<group>";
@@ -329,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE05E2311BFE7A71008C68FF /* GLHelper.cpp in Sources */,
 				EE58ADB51BED12A600B096F2 /* README.md in Sources */,
 				EE3B71B81BEBB06D00D79389 /* main.cpp in Sources */,
 			);
