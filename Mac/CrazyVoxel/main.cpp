@@ -7,8 +7,8 @@
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
 
-USING_NS_GLH
-USING_NS_SHAPES
+USING_NS_TRIANGLE
+
 
 int main( void )
 {
@@ -45,12 +45,21 @@ int main( void )
         glClear( GL_COLOR_BUFFER_BIT );
         
         // render OpenGL here
-        DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0, 120, 36 );
+        //DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0, 120, 36 );
 
         
         
-        GLHelper::Shapes::DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT *0.75, 0, 60, 36 );
-
+        //GLHelper::Shapes::Circle::DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT *0.75, 0, 60, 36 );
+        
+        //Shapes::Triangle::DrawTriangle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0.0f, 480 );
+        
+        //Shapes::Triangle::DrawTriangle( 10, 10, 0, 540, 200, 0, 300, 400, 0 );
+        GLfloat vertices[] = { 30, 50, 0,
+            200, 400, 0,
+            619, 10, 0 };
+        
+        DrawTriangle(vertices);
+        
         
         // Swap front and back buffers
         glfwSwapBuffers( window );
