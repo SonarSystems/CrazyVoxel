@@ -7,7 +7,7 @@
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
 
-USING_NS_TRIANGLE
+USING_NS_QUAD
 
 
 int main( void )
@@ -42,7 +42,7 @@ int main( void )
     // Loop until the user closes the window
     while ( !glfwWindowShouldClose( window ) )
     {
-        glClear( GL_COLOR_BUFFER_BIT );
+        glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
         
         // render OpenGL here
         //DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0, 120, 36 );
@@ -54,12 +54,20 @@ int main( void )
         //Shapes::Triangle::DrawTriangle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0.0f, 480 );
         
         //Shapes::Triangle::DrawTriangle( 10, 10, 0, 540, 200, 0, 300, 400, 0 );
-        GLfloat vertices[] = { 30, 50, 0,
-            200, 400, 0,
-            619, 10, 0 };
+        GLfloat topleft[] = { 30, 400, 0};
+        GLfloat topright[] = { 300, 360, 0};
+        GLfloat bottomright[] = { 620, 4, 0};
+        GLfloat bottomleft[] = { 76, 38, 0};
         
-        DrawTriangle(vertices);
+        GLfloat triangleVertices[] = { 30, 400, 0,
+            300, 360, 0,
+            620, 4, 0};
         
+        GLfloat halfScreenWidth = SCREEN_WIDTH / 2;
+        GLfloat halfScreenHeight = SCREEN_HEIGHT / 2;
+        
+        //GLHelper::Shapes::Hexagon::DrawHexagon(halfScreenWidth, halfScreenHeight, 0.0f, 169, true);
+        GLHelper::Shapes3D::Cube::DrawCube(halfScreenWidth, halfScreenHeight, 0.0f, 30, false);
         
         // Swap front and back buffers
         glfwSwapBuffers( window );
