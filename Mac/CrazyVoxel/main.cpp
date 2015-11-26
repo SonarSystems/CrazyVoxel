@@ -51,7 +51,7 @@ int main( void )
     glEnable( GL_DEPTH_TEST );
     // Accept fragment if it closer to the camera than the former one
 //    glDepthFunc( GL_LESS );
-    glDepthMask(GL_FALSE);
+   // glDepthMask(GL_FALSE);
     GLfloat rotation = 0.0f;
     
     // Loop until the user closes the window
