@@ -74,16 +74,16 @@ int main( void )
         GLfloat halfScreenWidth = SCREEN_WIDTH / 2;
         GLfloat halfScreenHeight = SCREEN_HEIGHT / 2;
         
-        //GLHelper::Shapes::Hexagon::DrawHexagon(halfScreenWidth, halfScreenHeight, 0.0f, 169, true);
         glPushMatrix();
-        
-        glRotatef(rotation, 1.0, 1.0, 0.0);
-        
-        GLHelper::Shapes3D::Cube::DrawCube(halfScreenWidth, halfScreenHeight, 0.0f, 100, true);
-
+        glTranslatef(halfScreenWidth, halfScreenHeight, 0);
+        glRotatef(rotation, 1, 1, 1);
+        glTranslatef(-halfScreenWidth, -halfScreenHeight, 0);
+        GLHelper::Shapes3D::Cube::DrawCube(halfScreenWidth, halfScreenHeight, 0.0f, 150, true);
         glPopMatrix();
         
-        rotation += 0.5;
+
+        
+        rotation += 1;
         
         // Swap front and back buffers
         glfwSwapBuffers( window );
