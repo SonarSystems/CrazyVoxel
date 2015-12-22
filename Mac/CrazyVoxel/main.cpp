@@ -3,14 +3,17 @@
 #include <math.h>
 #include <iostream>
 
-#include "GLHelper.h"
+#include "GLHelper/GLHelper.h"
 
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480
 
-USING_NS_QUAD
+
 
 void keyCallback( GLFWwindow *window, int key, int scancode, int action, int mods );
+
+GLfloat translationX = 0.0f;
+GLfloat translationY = 0.0f;
 
 int main( void )
 {
@@ -21,7 +24,7 @@ int main( void )
     {
         return -1;
     }
-    
+    //glfwWindowHint(GLFW_SAMPLES, 2); // antialiasing
     // Create a windowed mode window and its OpenGL context
     window = glfwCreateWindow( SCREEN_WIDTH, SCREEN_HEIGHT, "Hello World", NULL, NULL );
     
@@ -54,36 +57,46 @@ int main( void )
    // glDepthMask(GL_FALSE);
     GLfloat rotation = 0.0f;
     
+    GLfloat halfScreenWidth = SCREEN_WIDTH / 2;
+    GLfloat halfScreenHeight = SCREEN_HEIGHT / 2;
+    
+    GLHelper::Shapes3D::Cube cube;
+    cube.SetCenterPosition(halfScreenWidth, halfScreenHeight, 0);
+    cube.SetEdgeLength( 250);
+    cube.SetColour(COLOUR_YELLOW);
+    cube.SetWireframe(true);
+    
+    
+    std::cout << cube.GetColourGreen() << std::endl;
+    
     // Loop until the user closes the window
     while ( !glfwWindowShouldClose( window ) )
     {
         glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT );
         
-        
-        // render OpenGL here
-        //DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0, 120, 36 );
 
         
-        
-        //GLHelper::Shapes::Circle::DrawHollowCircle( SCREEN_WIDTH / 2, SCREEN_HEIGHT *0.75, 0, 60, 36 );
-        
-        //Shapes::Triangle::DrawTriangle( SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 0.0f, 480 );
-        
-        //Shapes::Triangle::DrawTriangle( 10, 10, 0, 540, 200, 0, 300, 400, 0 );
-
-        GLfloat halfScreenWidth = SCREEN_WIDTH / 2;
-        GLfloat halfScreenHeight = SCREEN_HEIGHT / 2;
         
         glPushMatrix();
         glTranslatef(halfScreenWidth, halfScreenHeight, 0);
-        glRotatef(rotation, 1, 1, 1);
+        //glRotatef(rotation, 1, 1, 1);
+        glRotatef( translationX, 1, 0, 0 );
+        glRotatef( translationY, 0, 1, 0 );
         glTranslatef(-halfScreenWidth, -halfScreenHeight, 0);
-        GLHelper::Shapes3D::Cube::DrawCube(halfScreenWidth, halfScreenHeight, 0.0f, 150, true);
+        
+        //GLHelper::Shapes3D::Cube::DrawCube(halfScreenWidth, halfScreenHeight, 0.0f, 150, WIREFRAME_ON, COLOUR_RED );
+        //cube.Draw();
+        
+        GLHelper::Shapes2D::Circle circle;
+        circle.SetRadius( 175 );
+        circle.SetColour(COLOUR_GREEN);
+        circle.SetWireframe(true);
+        circle.SetCenterPosition(halfScreenWidth, halfScreenHeight, 0);
+        circle.Draw( );
         glPopMatrix();
         
-
         
-        rotation += 1;
+        rotation += 2;
         
         // Swap front and back buffers
         glfwSwapBuffers( window );
@@ -101,12 +114,30 @@ int main( void )
 
 void keyCallback( GLFWwindow *window, int key, int scancode, int action, int mods )
 {
-    std::cout << key << std::endl;
+    //std::cout << key << std::endl;
+    
+    const GLfloat rotationSpeed = 10;
     
     // actions are GLFW_PRESS, GLFW_RELEASE or GLFW_REPEAT
-    if ( key == GLFW_KEY_SPACE && action == GLFW_REPEAT )
+    if ( action == GLFW_PRESS || action == GLFW_REPEAT )
     {
-        std::cout << "Space Key Pressed" << std::endl;
+        switch ( key )
+        {
+            case GLFW_KEY_UP:
+                translationX -= rotationSpeed;
+                break;
+            case GLFW_KEY_DOWN:
+                translationX += rotationSpeed;
+                break;
+            case GLFW_KEY_RIGHT:
+                translationY += rotationSpeed;
+                break;
+            case GLFW_KEY_LEFT:
+                translationY -= rotationSpeed;
+                break;
+        }
+        
+        
     }
 }
 
